@@ -22,24 +22,24 @@ function addComments(PDO $db, string $nom, string $courriel, string $titre, stri
      * On utilise la fonction trim pour supprimer les espaces en début et fin de chaîne
      */
 
-    $nom = htmlspecialchars(strip_tags(trim($nom)),ENT_QUOTES);
+    $nom = htmlspecialchars(strip_tags(trim($nom)), ENT_QUOTES);
     // false si le courriel n'est pas valide, sinon on le garde
     $courriel = filter_var($courriel, FILTER_VALIDATE_EMAIL);
     $titre = htmlspecialchars(strip_tags($titre), ENT_QUOTES);
     $texte = htmlspecialchars(strip_tags(trim($texte)), ENT_QUOTES);
 
     // si les données ne sont pas valides, on envoie false
-    if(empty($nom) || $courriel===false || empty($titre) || empty($texte)){
+    if (empty($nom) || $courriel === false || empty($titre) || empty($texte)) {
         return false;
     }
     // on prépare la requête
     $sql = "INSERT INTO comments (nom, courriel, titre, texte) VALUES ('$nom', '$courriel', '$titre', '$texte')";
-    try{
+    try {
         // on exécute la requête
         $db->exec($sql);
         // si tout s'est bien passé, on renvoie true
         return true;
-    }catch(Exception $e){
+    } catch (Exception $e) {
         // sinon, on renvoie le message d'erreur
         return $e->getMessage();
     }

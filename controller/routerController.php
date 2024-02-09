@@ -3,8 +3,8 @@
 Notre router
 */
 // s'il existe la variable get section
-if(isset($_GET['section'])){
-    switch($_GET['section']){
+if (isset($_GET['section'])) {
+    switch ($_GET['section']) {
         case "travaux":
             $route = "travaux.html.php";
             break;
@@ -18,6 +18,6 @@ if(isset($_GET['section'])){
         default:
             $route = "error404.html.php";
     }
-}else{
+} else {
     $route = "homepage.html.php";
 }

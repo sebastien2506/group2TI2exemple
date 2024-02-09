@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
+        <meta name="description" content="Group2ti2exemple | Livre d'or" />
+        <meta name="author" content="Michaël Pitz" />
+        <title>Group2ti2exemple | Livre d'or</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -21,7 +21,7 @@ var_dump($_GET,$_POST);
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                <h1>Livre d'or</h1>
+                <h1>Group2ti2exemple | Livre d'or</h1>
                 <p class="lead">Laisser moi votre avis sur mes travaux</p>
             </div>
             <div>

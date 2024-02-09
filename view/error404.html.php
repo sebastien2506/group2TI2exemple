@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Erreur 404</title>
+        <meta name="description" content="Group2ti2exemple | Erreur 404" />
+        <meta name="author" content="Michaël Pitz" />
+        <title>Group2ti2exemple | Erreur 404</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -20,7 +20,7 @@ include "menu.html.php";
         <!-- Page content-->
         <div class="container">
             <div class="text-center mt-5">
-                <h1>Erreur 404</h1>
+                <h1>Group2ti2exemple | Erreur 404</h1>
                 <p class="lead">Erreur 404</p>
             </div>
         </div>

@@ -6,10 +6,10 @@ Notre router
 if(isset($_GET['section'])){
     switch($_GET['section']){
         case "travaux":
-            $route = "test.homepage.html.php";
+            $route = "travaux.html.php";
             break;
         case "contact":
-            $route = "test.homepage.html.php";
+            $route = "contact.html.php";
             break;
         case "livredor":
             require "livredorController.php";

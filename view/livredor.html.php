@@ -34,30 +34,46 @@ var_dump($_GET,$_POST);
                     <?php
                 }
                 ?>
-<form action="" method="POST" name="or">
-<div class="mb-3">         
-  <label for="exampleFormControlInput1" class="form-label">Nom</label>
-  <input name='nom' type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom" required>
-</div>
-<div class="mb-3">         
-  <label for="exampleFormControlInput2" class="form-label">Email address</label>
-  <input name='courriel' type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required>
-</div>
-<div class="mb-3">         
-  <label for="exampleFormControlInput3" class="form-label">Titre</label>
-  <input name='titre' type="text" class="form-control" id="exampleFormControlInput3" placeholder="Titre" required>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea name='texte' class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-</div>
-<input class="btn btn-primary" type="submit" value="Envoyer">
-            </form>
             </div>
     
+
+        <div class="col-md-6">
+            <?php
+            foreach ($comments as $commentaire) {
+                ?>
+                <div class="card">
+                    <div class="card-header">
+                        <?php echo $commentaire['date_heure']; ?> | <?php echo $commentaire['titre']; ?>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $commentaire['nom']; ?></h5>
+                        <p class="card-text"><?php echo $commentaire['texte']; ?></p>
+                    </div>
+                </div>
+                <?php
+            }
+            ?>
         </div>
-        <div>
-            <?php var_dump($comments); ?>
+            <form action="" method="POST" name="or">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                    <input name='nom' type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Email address</label>
+                    <input name='courriel' type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput3" class="form-label">Titre</label>
+                    <input name='titre' type="text" class="form-control" id="exampleFormControlInput3" placeholder="Titre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea name='texte' class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Envoyer">
+            </form>
+        </div>
         </div>
         <!-- Bootstrap core JS-->
         <script src="js/bootstrap.bundle.min.js"></script>

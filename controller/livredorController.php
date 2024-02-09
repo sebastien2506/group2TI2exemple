@@ -1,6 +1,7 @@
 <?php
 // chargement de configuration (pas de soucis si déjà appelé dans index.php car require_once)
 require_once "../config.php";
+// chargement du modèle de la table comments
 require_once "../model/commentsModel.php";
 
 // connexion à la DB
@@ -23,7 +24,7 @@ if(isset($_POST['nom'], $_POST['courriel'], $_POST['titre'], $_POST['texte'])){
         header("Location: ./?section=livredor");
         exit();
     }else{
-        // sinon on affiche un message d'erreur
+        // sinon, on affiche un message d'erreur
         $message = "Erreur lors de l'insertion";
     }
 }

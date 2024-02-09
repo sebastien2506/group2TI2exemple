@@ -57,7 +57,7 @@ var_dump($_GET,$_POST);
     
         </div>
         <div>
-            Ici les commentaires
+            <?php var_dump($comments); ?>
         </div>
         <!-- Bootstrap core JS-->
         <script src="js/bootstrap.bundle.min.js"></script>

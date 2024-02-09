@@ -3,9 +3,11 @@
 // Chargement de tous les commentaires
 function getComments(PDO $db): array
 {
-    $sql = "SELECT * FROM comments";
-    $stmt = $db->query($sql);
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $sql = "SELECT * FROM comments ORDER BY date_heure ASC";
+    $query = $db->query($sql);
+    $result = $query->fetchAll(PDO::FETCH_ASSOC);
+    $query->closeCursor();
+    return $result;
 }
 
 // Insertion d'un commentaire

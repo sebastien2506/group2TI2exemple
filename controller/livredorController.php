@@ -11,21 +11,25 @@ try{
     die($e->getMessage());
 }
 
+
 // si le formulaire a été soumis
 if(isset($_POST['nom'], $_POST['courriel'], $_POST['titre'], $_POST['texte'])){
 
-    // on appelle la fonction setComments
+    // on appelle la fonction d'insertion dans la DB
     $insert = addComments($db, $_POST['nom'], $_POST['courriel'], $_POST['titre'], $_POST['texte']);
     // si l'insertion a réussi
     if($insert){
-        // on redirige vers la page d'accueil
-        header("Location: ./");
+        // on redirige vers la page actuelle
+        header("Location: ./?section=livredor");
         exit();
     }else{
         // sinon on affiche un message d'erreur
         $message = "Erreur lors de l'insertion";
     }
 }
+
+// on récupère les commentaires
+$comments = getComments($db);
 
 // fermeture de la connexion
 $db = null;

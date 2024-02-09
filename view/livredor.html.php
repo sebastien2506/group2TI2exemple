@@ -25,6 +25,15 @@ var_dump($_GET,$_POST);
                 <p class="lead">Laisser moi votre avis sur mes travaux</p>
             </div>
             <div>
+                <?php
+                if (isset($message)) {
+                   ?>
+                     <div class="alert alert-danger" role="alert">
+                      <?php echo $message; ?>
+                    </div>
+                    <?php
+                }
+                ?>
 <form action="" method="POST" name="or">
 <div class="mb-3">         
   <label for="exampleFormControlInput1" class="form-label">Nom</label>

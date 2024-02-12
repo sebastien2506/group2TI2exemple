@@ -37,7 +37,7 @@ var_dump($_GET, $_POST);
     </div>
 
 
-    <div class="col-md-6">
+    <div class="col-8 offset-2">
         <?php
         foreach ($comments as $commentaire) {
             ?>
@@ -53,7 +53,7 @@ var_dump($_GET, $_POST);
             <?php
         }
         ?>
-    </div>
+<hr>
     <form action="" method="POST" name="or">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nom</label>
@@ -76,6 +76,7 @@ var_dump($_GET, $_POST);
         </div>
         <input class="btn btn-primary" type="submit" value="Envoyer">
     </form>
+    </div>
 </div>
 </div>
 <!-- Bootstrap core JS-->

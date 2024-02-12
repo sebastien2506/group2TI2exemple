@@ -1,18 +1,20 @@
-# prepaTI2
+# group2TI2exemple
 
 Préparation de la partie GIT, Structure de site (MVC),  PHP - SQL
 
 ## GIT
 
-Créez un fork du projet original.
+Créez un `fork` du projet original.
 
 Travaillez sur ce fork.
 
-N'oubliez pas de copier `config.php.ini` sous le nom de `config.php`
+Faites des `commits` régulièrement, à chaque étape.
 
-Faites des commit régulièrement, à chaque étapes.
+Importez la base de données `data/group2TI2exemple.sql` dans votre base de données `MariaDB`.
 
-Le pull request se fera en fin de TI.
+N'oubliez pas de copier `config.php.ini` sous le nom de `config.php`.
+
+Le pull request se fera en fin de TI vers l'`upstream`, qui est donc le projet original.
 
 ## Structure MVC
 

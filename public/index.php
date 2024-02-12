@@ -13,7 +13,7 @@ Front Controller
 require_once "../config.php";
 
 /*
-Routeur vers nos 4 pages -> $route
+Routeur vers nos 4 pages --> $route
 */
 require_once "../controller/routerController.php";
 

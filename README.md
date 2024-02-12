@@ -8,6 +8,8 @@ Créez un fork du projet original.
 
 Travaillez sur ce fork.
 
+N'oubliez pas de copier `config.php.ini` sous le nom de `config.php`
+
 Faites des commit régulièrement, à chaque étapes.
 
 Le pull request se fera en fin de TI.
